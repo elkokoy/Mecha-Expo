@@ -655,8 +655,6 @@ client.on('message', message => {
 
 🖤($allbots ⟿⟿ Nubmers bots in server)🖤
 
-🖤($botin ⟿⟿⟿⟿⟿⟿ Bot Information)🖤
-
 🖤($report ⟿⟿⟿⟿⟿ Report a member)🖤
 
 🖤($support ⟿⟿ Contact with the bot owner)🖤
