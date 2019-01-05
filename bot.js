@@ -912,7 +912,7 @@ client.on('message' , message => {
              .setAuthor(message.author.username, message.author.avatarURL)
              .setDescription(' Suggested Sent')
              .setThumbnail(message.author.avatarURL)
-             .setFooter("Fras#9999")
+             .setFooter("Mecha Expo")
         message.channel.send(embed);
 }
  });
