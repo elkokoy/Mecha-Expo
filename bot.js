@@ -831,7 +831,7 @@ client.on('message',function(message) {
 let args = message.content.split(" ").slice(1).join(" ");
 if(message.content.startsWith(prefix + "say")) {
 if(!args) return;
-if(message.author.id !== "351366504068939777") return message.reply('**You aren\'t the bot owner.**');
+if(message.author.id !== "313410295055777813") return message.reply('**You aren\'t the bot owner.**');
 message.channel.send(`** ${args}**`); 
 }
 });
