@@ -649,29 +649,28 @@ client.on('message', message => {
   let embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setDescription(`
-💜_____ 🖤😎 - ＰＲＥＭＩＵＭ ＮＯＶＡ - 😎🖤  _____💜
+🕴_____ 🖤😎 - Mecha Expo - 😎🖤  _____🕴
 
-🖤(-server ⟿⟿⟿⟿⟿ About the server)🖤
+🖤($server ⟿⟿⟿⟿⟿ About the server)🖤
 
-🖤(-allbots ⟿⟿ Nubmers bots in server)🖤
+🖤($allbots ⟿⟿ Nubmers bots in server)🖤
 
-🖤(-botin ⟿⟿⟿⟿⟿⟿ Bot Information)🖤
+🖤($botin ⟿⟿⟿⟿⟿⟿ Bot Information)🖤
 
-🖤(-report ⟿⟿⟿⟿⟿ Report a member)🖤
+🖤($report ⟿⟿⟿⟿⟿ Report a member)🖤
 
-🖤(-support ⟿⟿ Contact with the bot owner)🖤
+🖤($support ⟿⟿ Contact with the bot owner)🖤
 
-🖤(-avatar ⟿⟿⟿⟿⟿ View your avatar)🖤
+🖤($avatar ⟿⟿⟿⟿⟿ View your avatar)🖤
 
-🖤(-members ⟿⟿⟿⟿ Status of member)🖤
+🖤($members ⟿⟿⟿⟿ Status of member)🖤
 
-🖤(-say ⟿⟿⟿⟿⟿⟿ Status of member)🖤
+🖤($say ⟿⟿⟿⟿⟿⟿ Status of member)🖤
 
-🖤(-emojis ⟿⟿⟿⟿⟿ Emoji Of Server)🖤
+🖤($emojis ⟿⟿⟿⟿⟿ Emoji Of Server)🖤
 
 
-💜_____ 🖤😎 - ＰＲＥＭＩＵＭ ＮＯＶＡ - 😎🖤  _____💜
-
+🕴_____ 🖤😎 - Mecha Expo - 😎🖤  _____🕴
  `)
    message.channel.sendEmbed(embed)
    
