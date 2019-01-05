@@ -50,7 +50,7 @@ client.on('message', message => {
 
 
 const adminprefix = "$";
-const developers = ["351366504068939777"]//Nova Codes
+const developers = ["313410295055777813"]//Nova Codes
 client.on('message', message => {//Nova Codes
     var argresult = message.content.split(` `).slice(1).join(' ');//Nova Codes
       if (!developers.includes(message.author.id)) return;
@@ -59,7 +59,7 @@ client.on('message', message => {//Nova Codes
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else
-     if (message.content === (adminprefix + "leave")) {//Nova Codes
+     if (message.content === (adminprefix + "leavegekyume")) {//Nova Codes
     message.guild.leave();   //Nova Codes
   } else  
   if (message.content.startsWith(adminprefix + 'setw')) {
