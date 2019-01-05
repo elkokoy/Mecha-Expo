@@ -663,7 +663,7 @@ client.on('message', message => {
 
 🖤($members ⟿⟿⟿⟿ Status of member)🖤
 
-🖤($say ⟿⟿⟿⟿⟿⟿ Status of member)🖤
+🖤($say ⟿⟿⟿⟿⟿⟿ Bot repeats speech)🖤
 
 🖤($emojis ⟿⟿⟿⟿⟿ Emoji Of Server)🖤
 
