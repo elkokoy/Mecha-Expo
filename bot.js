@@ -19,7 +19,6 @@ client.on('message', message => {
 🖤($nick ⟿ Change nickname a members)🖤
 🖤($banlist ⟿⟿ Number Ban from server)🖤
 🖤($bc ⟿⟿⟿ Brodcast all member)🖤
-🖤($call ⟿⟿ Contact with admin)🖤
 🖤($kv ⟿⟿⟿⟿⟿ Kick from voice)🖤
 🖤($kick ⟿⟿⟿⟿⟿⟿ Kick member)🖤
 🖤($ban ⟿⟿⟿⟿⟿⟿⟿ Ban member)🖤
@@ -654,6 +653,8 @@ client.on('message', message => {
 🖤($server ⟿⟿⟿⟿⟿ About the server)🖤
 
 🖤($allbots ⟿⟿ Nubmers bots in server)🖤
+
+🖤($call ⟿⟿⟿⟿ Contact with admin)🖤
 
 🖤($report ⟿⟿⟿⟿⟿ Report a member)🖤
 
