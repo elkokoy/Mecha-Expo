@@ -670,6 +670,8 @@ client.on('message', message => {
 
 🖤($emojis ⟿⟿⟿⟿⟿ Emoji Of Server)🖤
 
+🖤($new 💌 ⟿⟿⟿⟿ Create new ticket)🖤
+
 
 🕴_____ 🖤😎 - Mecha Expo - 😎🖤  _____🕴
  `)
