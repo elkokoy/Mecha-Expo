@@ -894,6 +894,28 @@ client.on("message", (message) => {
 
 });
 
+
+
+client.on('message' , message => {
+	let prefix = '$'
+        if (message.author.bot) return;
+        if (message.content.startsWith(prefix + "sug")) {
+        if (!message.channel.guild) return;
+        let args = message.content.split(" ").slice(1).join(" ");
+        client.channels.get("465654273825308694").send(
+            "\n" + "**" + " ● Suggested By : " + "**" +
+            "\n" + "**" + "» " + message.author.tag + "**" +
+            "\n" + "**" + " ● Suggest : " + "**" +
+            "\n" + "**" + args + "**")
+        
+        let embed = new Discord.RichEmbed()
+             .setAuthor(message.author.username, message.author.avatarURL)
+             .setDescription(' Suggested Sent')
+             .setThumbnail(message.author.avatarURL)
+             .setFooter("Fras#9999")
+        message.channel.send(embed);
+}
+ });
 ////////////////////////////////////////////////////OWNER////////////////////////////////////////////////
 
 
