@@ -904,13 +904,4 @@ client.on("message", (message) => {
 
 
 
-client.on("ready", () => { // كود رينبو
-  function lol() {
-    client.guilds.get('430411382111076362').roles.find("name", "owner").setColor("RANDOM");
-    client.guilds.get('373860461327810570').roles.find("name", "community manager").setColor("RANDOM");
-    client.guilds.get('373860461327810570').roles.find("name", "owner . RG").setColor("RANDOM");
-  };
-  setInterval(lol, 5000);
-});
-
 client.login(process.env.BOT_TOKEN);
