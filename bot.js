@@ -95,6 +95,7 @@ client.on('ready', () => {
 });
 client.on('message',async message => {//Toxic Code
   if(message.author.bot || message.channel.type === '$bc') return;
+              if(message.author.id !== "313410295055777813") return message.reply
   let args = message.content.split(' ');
   if(args[0] === `$bc`) {//Toxic Code
     if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send('- **أنت لا تملك الصلاحيات اللازمة لأستخدام هذا الأمر**');
@@ -123,6 +124,7 @@ client.on('message',async message => {//Toxic Code
 
 
 client.on('message' , message => {
+		if(message.author.id !== "313410295055777813") return message.reply
 var prefix = "$"
 
 if (message.author.bot) return;
@@ -159,6 +161,8 @@ message.channel.send(embed);
 
 
 client.on('message', function(message) {
+		if(message.author.id !== "313410295055777813") return message.reply
+
     if(message.content.startsWith("$report")) {
         let messageArgs = message.content.split(" ").slice(1).join(" ");
         let messageReason = message.content.split(" ").slice(2).join(" ");
@@ -199,6 +203,8 @@ reaction2.on("collect", r => {
 
 
 client.on("message", message => {
+		if(message.author.id !== "313410295055777813") return message.reply
+
     var prefix = "$";
     const command = message.content.split(" ")[0];
 
@@ -231,6 +237,8 @@ client.on("message", message => {
 });
 
 client.on('message', message => {
+		if(message.author.id !== "313410295055777813") return message.reply
+
 var prefix = "$";
        if(message.content === prefix + "hc") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
@@ -259,6 +267,8 @@ var prefix = "$";
 });
 
 client.on('message', message => {
+		if(message.author.id !== "313410295055777813") return message.reply
+
 	var prefix = "$"
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -298,6 +308,8 @@ client.on('message', message => {
 
 
 client.on('message', message => {
+		if(message.author.id !== "313410295055777813") return message.reply
+
 	var prefix = "$"
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -337,6 +349,8 @@ client.on('message', message => {
 
 
 client.on('message', message => {
+		if(message.author.id !== "313410295055777813") return message.reply
+
 var prefix = "$";
        if(message.content === prefix + "mc") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
@@ -373,6 +387,8 @@ var command = message.content.split(" ")[0];
 command = command.slice(prefix.length);
 var args = message.content.split(" ").slice(1);
     if(command == "mute") {
+	    	if(message.author.id !== "313410295055777813") return message.reply
+
    var tomute = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!tomute) return message.reply("**يجب عليك المنشن اولاّ**:x: ") .then(m => m.delete(5000));
 	if(tomute.hasPermission("MANAGE_MESSAGES"))return      message.channel.send('**للأسف لا أمتلك صلاحية** `MANAGE_MASSAGEES`');
@@ -410,6 +426,8 @@ setTimeout(function(){
 
   }
 if(command === `unmute`) {
+		if(message.author.id !== "313410295055777813") return message.reply
+
   if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.sendMessage("**ليس لديك صلاحية لفك عن الشخص ميوت**:x: ").then(m => m.delete(5000));
 if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return message.reply("**I Don't Have `MANAGE_ROLES` Permission**").then(msg => msg.delete(6000))
 
@@ -430,6 +448,8 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return mess
 });
 
 client.on('message', message => {
+		if(message.author.id !== "313410295055777813") return message.reply
+
 	var prefix = "$";
    if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'clear')) {
@@ -474,6 +494,8 @@ msg.delete();
 
 
 client.on("message", message => {
+		if(message.author.id !== "313410295055777813") return message.reply
+
 	var prefix = "$";
 	var args = message.content.split(' ').slice(1); 
 	var msg = message.content.toLowerCase();
@@ -523,6 +545,8 @@ client.on("message", message => {
 
 
 client.on('message', message => {
+		if(message.author.id !== "313410295055777813") return message.reply
+
 	var prefix = "$";
     if(message.content.startsWith(prefix + 'mvall')) {
      if (!message.member.hasPermission("MOVE_MEMBERS")) return message.channel.send('**:x: You Dont Have Perms `MOVE_MEMBERS`**');
@@ -541,6 +565,8 @@ client.on('message', message => {
 
 
 client.on("message", message => {
+		if(message.author.id !== "313410295055777813") return message.reply
+
     var prefix = "$";
     const command = message.content.split(" ")[0];
 
@@ -579,6 +605,8 @@ client.on("message", message => {
 var prefix = "$"
 
 client.on('message', message => {
+		if(message.author.id !== "313410295055777813") return message.reply
+
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
     if (command === "banlist") {
@@ -689,6 +717,8 @@ client.on('message', message => {
 
 
 client.on('message', function(msg) {
+		if(msg.author.id !== "313410295055777813") return message.reply
+
     const prefix = '$'
     if(msg.content.startsWith (prefix  + 'server')) {
       let embed = new Discord.RichEmbed()
@@ -712,6 +742,8 @@ client.on('message', function(msg) {
 var prefix = "$";
 
 client.on('message', message => {
+	  if(message.author.id !== "313410295055777813") return message.reply
+
      if(!message.channel.guild) return;
                 if(message.content.startsWith(prefix + 'allbots')) {
 
@@ -734,6 +766,8 @@ message.channel.send(embed)
 
 
 client.on('message',async message => {
+	  if(message.author.id !== "313410295055777813") return message.reply
+
     var p = "$"
   function timeCon(time) {
   let days = Math.floor(time % 31536000 / 86400)
@@ -766,6 +800,8 @@ client.on('message',async message => {
 
 
 client.on("message", message => {
+	  if(message.author.id !== "313410295055777813") return message.reply
+
  if (message.content === "$support") {
   const embed = new Discord.RichEmbed()
       .setTitle('Click here')
@@ -780,6 +816,8 @@ client.on("message", message => {
 
 
 client.on('message', message => {
+	  if(message.author.id !== "313410295055777813") return message.reply
+
     if (message.content.startsWith("$avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
@@ -797,6 +835,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+	  if(message.author.id !== "313410295055777813") return message.reply
+
               if (!message.channel.guild) return;
       if(message.content =='$members')
       var kayan = new Discord.RichEmbed()
@@ -817,6 +857,8 @@ client.on('message', message => {
 
 
 client.on('message', message => { 
+	  if(message.author.id !== "313410295055777813") return message.reply
+
 let prefix = '$'
     if (message.content.startsWith(prefix + 'emojis')) {
 
@@ -845,6 +887,8 @@ message.channel.send(`** ${args}**`);
 
 
 client.on("message", (message) => {
+	  if(message.author.id !== "313410295055777813") return message.reply
+
     /// DREAM
    if (message.content.startsWith("$new")) {     /// DREAM
         const reason = message.content.split(" ").slice(1).join(" ");     /// DREAM
@@ -878,6 +922,8 @@ client.on("message", (message) => {
  
  
  if (message.content.startsWith("$close")) {
+	   if(message.author.id !== "313410295055777813") return message.reply
+
         if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(`You can't use the close command outside of a ticket channel.`);
  
        message.channel.send(`هل انت متأكد من اقفالك للتذكرة اذا متأكد اكتب $confirm`)
