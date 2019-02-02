@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if(message.author.id !== "351366504068939777") return message.reply
+	if(message.author.id !== "313410295055777813") return message.reply
               var prefix = "$" ;
   if (message.content.startsWith(prefix + "admin")) {
   let embed = new Discord.RichEmbed()
@@ -646,7 +646,7 @@ var cont = message.content.slice(prefix.length).split(" ");
 
 
 client.on('message', message => {
-  if(message.author.id !== "351366504068939777") return message.reply
+  if(message.author.id !== "313410295055777813") return message.reply
               var prefix = "$" ;
   if (message.content.startsWith(prefix + "help")) {
   let embed = new Discord.RichEmbed()
