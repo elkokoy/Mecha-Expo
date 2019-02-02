@@ -717,8 +717,6 @@ client.on('message', message => {
 
 
 client.on('message', function(msg) {
-		if(msg.author.id !== "313410295055777813") return message.reply
-
     const prefix = '$'
     if(msg.content.startsWith (prefix  + 'server')) {
       let embed = new Discord.RichEmbed()
