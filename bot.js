@@ -991,7 +991,13 @@ client.on('message',async Epic => {
 });
 
 
-
+ 
+client.on("guildMemberAdd", (member) => {
+client.channels.get('548803262027923476').edit({name : `Members : [ ${member.guild.memberCount} ]`});
+})
+client.on("guildMemberRemove", (member) => {
+client.channels.get('548803262027923476').edit({name : `Members : [ ${member.guild.memberCount} ]`});
+})
 
 
 ////////////////////////////////////////////////////OWNER////////////////////////////////////////////////
