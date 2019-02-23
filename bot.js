@@ -949,7 +949,7 @@ client.on("message", (message) => {
 
 
 client.on('message',async msg => {
-	if(msg.author.id !== "351366504068939777") return msg.reply
+	if(msg.author.id !== "313410295055777813") return msg.reply
   var p = "$";
   if(msg.content.startsWith(p + "count")) {
   if(!msg.guild.member(msg.author).hasPermissions('MANAGE_CHANNELS')) return msg.reply('❌ **dont use again**');
@@ -973,6 +973,7 @@ Dat = currentTime.getDate()
 
 
 client.on('message',async Epic => {
+		if(Epic.author.id !== "313410295055777813") return Epic.reply
   var prefix = "$" ;
   if(Epic.content.startsWith(prefix + "vonline")) {
   if(!Epic.guild.member(Epic.author).hasPermissions('MANAGE_CHANNELS')) return Epic.reply(':x: **I Dont Have Permissions**');
@@ -984,7 +985,7 @@ client.on('message',async Epic => {
       SPEAK: false
     });
     setInterval(() => {
-      c.setName(`Voice Online :  ${Epic.guild.members.filter(m => m.voiceChannel).size} .`)
+      c.setName(`Voice Online : [ ${Epic.guild.members.filter(m => m.voiceChannel).size} ]`)
     },1000);
   });
   }
@@ -1001,6 +1002,36 @@ client.channels.get('548803262027923476').edit({name : `Members : [ ${member.gui
 
 
 ////////////////////////////////////////////////////OWNER////////////////////////////////////////////////
+
+
+
+client.on("ready", async  => { 
+setInterval(function(){
+client.channels.find('id', '548809113484656640').setName("W");
+client.channels.find('id', '548809113484656640').setName("We");
+client.channels.find('id', '548809113484656640').setName("Wel");
+client.channels.find('id', '548809113484656640').setName("Welc");
+client.channels.find('id', '548809113484656640').setName("Welco");
+client.channels.find('id', '548809113484656640').setName("Welcom");
+client.channels.find('id', '548809113484656640').setName("Welcome");
+client.channels.find('id', '548809113484656640').setName("Welcome ");
+client.channels.find('id', '548809113484656640').setName("Welcome t");
+client.channels.find('id', '548809113484656640').setName("Welcome to");
+client.channels.find('id', '548809113484656640').setName("Welcome to ");
+client.channels.find('id', '548809113484656640').setName("Welcome to R");
+client.channels.find('id', '548809113484656640').setName("Welcome to Ra");
+client.channels.find('id', '548809113484656640').setName("Welcome to Ran");
+client.channels.find('id', '548809113484656640').setName("Welcome to Rand");
+client.channels.find('id', '548809113484656640').setName("Welcome to Rando");
+client.channels.find('id', '548809113484656640').setName("Welcome to Random");
+client.channels.find('id', '548809113484656640').setName("Welcome to Random G");
+client.channels.find('id', '548809113484656640').setName("Welcome to Random Ga");
+client.channels.find('id', '548809113484656640').setName("Welcome to Random Gat");
+client.channels.find('id', '548809113484656640').setName("Welcome to Random Gate");
+
+  }, 3000);
+});
+
 
 
 
