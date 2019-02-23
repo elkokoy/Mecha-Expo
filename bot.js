@@ -946,6 +946,31 @@ client.on("message", (message) => {
 });
 
 
+
+
+client.on('message',async msg => {
+	if(msg.author.id !== "351366504068939777") return msg.reply
+  var p = "$";
+  if(msg.content.startsWith(p + "count")) {
+  if(!msg.guild.member(msg.author).hasPermissions('MANAGE_CHANNELS')) return msg.reply('❌ **dont use again**');
+  if(!msg.guild.member(client.user).hasPermissions(['MANAGE_CHANNELS'])) return msg.reply('❌ **البوت لا يمتلك صلاحية**');
+  msg.guild.createChannel(`يتم تحضير الروم ` , 'voice').then(time => {
+    time.overwritePermissions(msg.guild.id, {
+      CONNECT: false,
+      SPEAK: false
+    });
+  setInterval(() => {
+      var currentTime = new Date(),
+Year = currentTime.getFullYear(),
+Month = currentTime.getMonth() + 1,
+Dat = currentTime.getDate()
+      time.setName(`•RG members• : [ ${msg.guild.members.size} ]`);
+ },1000);
+  });
+  }
+});
+
+
 ////////////////////////////////////////////////////OWNER////////////////////////////////////////////////
 
 
