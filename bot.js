@@ -204,7 +204,7 @@ reaction2.on("collect", r => {
 
 client.on("message", message => {
 
-if (message.author.id === '313410295055777813','252462090151788546')
+if (message.author.id === '313410295055777813','252462090151788546') return message.reply
 
     var prefix = "$";
     const command = message.content.split(" ")[0];
