@@ -203,8 +203,6 @@ reaction2.on("collect", r => {
 
 
 client.on("message", message => {
-			if(message.author.id !== "313410295055777813") return message.reply
-			if(message.author.id !== "252462090151788546") return message.reply
 			if(message.author.id !== "517884556540379152") return message.reply
 
 
