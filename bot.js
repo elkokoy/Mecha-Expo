@@ -204,7 +204,42 @@ reaction2.on("collect", r => {
 
 client.on("message", message => {
 
-if (message.author.id === '313410295055777813','252462090151788546','517884556540379152') return message.reply
+	if(message.author.id !== "313410295055777813") return message.reply
+
+    var prefix = "$";
+    const command = message.content.split(" ")[0];
+
+    if(command == prefix+"kv"){
+
+        if (!message.guild.member(message.author).hasPermission('ADMINISTRATOR') || !message.guild.member(message.author).hasPermission('ADMINISTRATOR')) {
+            return message.reply('you do not have permission to perform this action!');
+        }
+
+        var member = message.guild.members.get(message.mentions.users.array()[0].id);
+        if(!message.mentions.users){
+            message.reply("please mention the member")
+            return;
+        }
+
+    if(!member.voiceChannel){
+    message.reply("i can't include voice channel for member!")
+    return;
+    }
+              message.guild.createChannel('voicekick', 'voice').then(c => {
+                member.setVoiceChannel(c).then(() => {
+                    c.delete(305).catch(console.log)
+        
+
+
+    
+      });
+     });
+    }
+});
+
+client.on("message", message => {
+
+	if(message.author.id !== "517884556540379152") return message.reply
 
     var prefix = "$";
     const command = message.content.split(" ")[0];
