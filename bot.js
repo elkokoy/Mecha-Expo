@@ -1041,33 +1041,6 @@ client.channels.get('548803262027923476').edit({name : `Members : [ ${member.gui
 
 
 
-client.on("ready", async  => { 
-setInterval(function(){
-client.channels.find('id', '548809113484656640').setName("W");
-client.channels.find('id', '548809113484656640').setName("We");
-client.channels.find('id', '548809113484656640').setName("Wel");
-client.channels.find('id', '548809113484656640').setName("Welc");
-client.channels.find('id', '548809113484656640').setName("Welco");
-client.channels.find('id', '548809113484656640').setName("Welcom");
-client.channels.find('id', '548809113484656640').setName("Welcome");
-client.channels.find('id', '548809113484656640').setName("Welcome ");
-client.channels.find('id', '548809113484656640').setName("Welcome t");
-client.channels.find('id', '548809113484656640').setName("Welcome to");
-client.channels.find('id', '548809113484656640').setName("Welcome to ");
-client.channels.find('id', '548809113484656640').setName("Welcome to R");
-client.channels.find('id', '548809113484656640').setName("Welcome to Ra");
-client.channels.find('id', '548809113484656640').setName("Welcome to Ran");
-client.channels.find('id', '548809113484656640').setName("Welcome to Rand");
-client.channels.find('id', '548809113484656640').setName("Welcome to Rando");
-client.channels.find('id', '548809113484656640').setName("Welcome to Random");
-client.channels.find('id', '548809113484656640').setName("Welcome to Random G");
-client.channels.find('id', '548809113484656640').setName("Welcome to Random Ga");
-client.channels.find('id', '548809113484656640').setName("Welcome to Random Gat");
-client.channels.find('id', '548809113484656640').setName("Welcome to Random Gate");
-
-  }, 3000);
-});
-
 
 
 
